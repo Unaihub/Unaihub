@@ -7,3 +7,6 @@ const firebaseConfig = {
   appId: "1:1083483403475:web:39bf656564a43b714c1026",
   measurementId: "G-8RLZ3DZGK9",
 };
+// your code goes here
+
+export {};

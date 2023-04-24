@@ -1,15 +1,17 @@
-/* dynamicGridTypography.css */
-
-body {
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-}
+/* dynamicGridTypography.module.scss */
 
 #animationCanvas {
+  // Remove global styles
+  // body {
+  //   background-color: #000000;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   height: 100vh;
+  //   margin: 0;
+  //   overflow: hidden;
+  // }
+
+  // Add local styles scoped to #animationCanvas selector
   display: block;
 }

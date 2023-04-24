@@ -5,7 +5,7 @@ exports.id = 892;
 exports.ids = [892];
 exports.modules = {
 
-/***/ 939:
+/***/ 4939:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -20,14 +20,14 @@ __webpack_require__.d(__webpack_exports__, {
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(664);
+var next_link = __webpack_require__(1664);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./utils/sample-data.ts
-var sample_data = __webpack_require__(521);
+var sample_data = __webpack_require__(5782);
 // EXTERNAL MODULE: ./components/Layout.tsx
-var Layout = __webpack_require__(391);
+var Layout = __webpack_require__(2391);
 // EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(689);
+var external_react_ = __webpack_require__(6689);
 ;// CONCATENATED MODULE: ./components/ListItem.tsx
 
 
@@ -107,7 +107,7 @@ const getStaticProps = async ()=>{
 
 /***/ }),
 
-/***/ 521:
+/***/ 5782:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -135,63 +135,63 @@ const getStaticProps = async ()=>{
 
 /***/ }),
 
-/***/ 280:
+/***/ 3280:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/app-router-context.js");
 
 /***/ }),
 
-/***/ 964:
+/***/ 4964:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router-context.js");
 
 /***/ }),
 
-/***/ 751:
+/***/ 1751:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
 
 /***/ }),
 
-/***/ 938:
+/***/ 3938:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
-/***/ 109:
+/***/ 1109:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/is-local-url.js");
 
 /***/ }),
 
-/***/ 854:
+/***/ 8854:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
 
 /***/ }),
 
-/***/ 297:
+/***/ 3297:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
-/***/ 782:
+/***/ 7782:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/resolve-href.js");
 
 /***/ }),
 
-/***/ 232:
+/***/ 9232:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/utils.js");
@@ -205,7 +205,7 @@ module.exports = require("next/head");
 
 /***/ }),
 
-/***/ 689:
+/***/ 6689:
 /***/ ((module) => {
 
 module.exports = require("react");
@@ -226,7 +226,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [664,391], () => (__webpack_exec__(939)));
+var __webpack_exports__ = __webpack_require__.X(0, [664,391], () => (__webpack_exec__(4939)));
 module.exports = __webpack_exports__;
 
 })();

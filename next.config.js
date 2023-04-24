@@ -1,2 +1,3 @@
-const withSass = require("@zeit/next-sass");
-module.exports = withSass();
+module.exports = {
+  // Add any other custom configurations here
+};

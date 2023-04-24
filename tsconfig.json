@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "*": ["*", "src/*"]
+      "*": ["*", "src/*"],
+      "dynamicGridTypography": ["./utils/dynamicGridTypography"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

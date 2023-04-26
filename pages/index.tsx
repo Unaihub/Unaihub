@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Layout from "../components/Layout";
 
-import styles from "../styles/dynamicGridTypography.module.scss";
-
 const IndexPage = () => {
   return (
     <Layout title="Home | Next.js + TypeScript Example">

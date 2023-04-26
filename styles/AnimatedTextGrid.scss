@@ -1,0 +1,26 @@
+.animated-text-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+
+  // Style for each character container
+  .character {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin-right: 20px;
+    overflow: hidden; // Hide grid cells that go outside the character container
+  }
+
+  // Style for each individual grid cell
+  .grid-cell {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 0; // Initially hidden
+    transition-property: opacity; // Animate the opacity property
+  }
+}

@@ -5,8 +5,8 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout title="Home | Next.js + TypeScript Example">
-      <header className={styles.header}>
-        <canvas id={styles.animationCanvas}></canvas>
+      <header>
+        <canvas></canvas>
       </header>
       <h1>Hello Next.js 👋</h1>
       <p>

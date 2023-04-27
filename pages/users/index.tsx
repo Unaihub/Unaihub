@@ -1,35 +1,28 @@
-import { GetStaticProps } from 'next'
-import Link from 'next/link'
+import React from "react";
+import Head from "next/head";
+import AnimatedTextGrid from "../src/components/AnimatedTextGrid";
 
-import { User } from '../../interfaces'
-import { sampleUserData } from '../../utils/sample-data'
-import Layout from '../../components/Layout'
-import List from '../../components/List'
+const IndexPage = () => {
+  return (
+    <div>
+      <Head>
+        <title>UNAIHUB</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-type Props = {
-  items: User[]
-}
+      <main>
+        {/* Add the AnimatedTextGrid component */}
+        return (
+        <Layout>
+          <AnimatedTextGrid text="UNAIHUB" />
+          // ... other components and content
+        </Layout>
+        );
+      </main>
 
-const WithStaticProps = ({ items }: Props) => (
-  <Layout title="Users List | Next.js + TypeScript Example">
-    <h1>Users List</h1>
-    <p>
-      Example fetching data from inside <code>getStaticProps()</code>.
-    </p>
-    <p>You are currently on: /users</p>
-    <List items={items} />
-    <p>
-      <Link href="/">Go home</Link>
-    </p>
-  </Layout>
-)
+      <footer></footer>
+    </div>
+  );
+};
 
-export const getStaticProps: GetStaticProps = async () => {
-  // Example for including static props in a Next.js function component page.
-  // Don't forget to include the respective types for any props passed into
-  // the component.
-  const items: User[] = sampleUserData
-  return { props: { items } }
-}
-
-export default WithStaticProps
+export default IndexPage;

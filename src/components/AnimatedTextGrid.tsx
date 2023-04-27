@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./AnimatedTextGrid.scss";
+import styles from "../styles/AnimatedTextGrid.module.scss";
 
 // Define the props for the AnimatedTextGrid component
 interface AnimatedTextGridProps {
@@ -36,7 +36,7 @@ const animateGridCells = (cells: HTMLElement[], duration: number) => {
 };
 
 // AnimatedTextGrid component
-export const AnimatedTextGrid: React.FC<AnimatedTextGridProps> = ({
+const AnimatedTextGrid: React.FC<AnimatedTextGridProps> = ({
   text,
   onFinish,
   duration = 1000,
@@ -105,3 +105,5 @@ export const AnimatedTextGrid: React.FC<AnimatedTextGridProps> = ({
     </div>
   );
 };
+
+export default AnimatedTextGrid;

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 
 // Import the AnimatedTextGrid component
-import AnimatedTextGrid from "../components/AnimatedTextGrid";
+import AnimatedTextGrid from "../src/components/AnimatedTextGrid";
 
 const IndexPage = () => {
   return (
@@ -21,6 +21,4 @@ const IndexPage = () => {
   );
 };
 
-const AnimatedTextGrid: React.FC<AnimatedTextGridProps> = ({ ... }) => { ... }
-export default AnimatedTextGrid;
-
+export default IndexPage;

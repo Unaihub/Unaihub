@@ -1,34 +1,32 @@
-// pages/index.tsx
+// Import required modules and components
 import React from "react";
-import Link from "next/link";
-import Layout from "../components/Layout";
+import Head from "next/head";
 import AnimatedTextGrid from "../src/components/AnimatedTextGrid";
+import styles from "../styles/AnimatedTextGrid.module.scss";
 
+// IndexPage component
 const IndexPage = () => {
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
-      {/* The header containing the canvas */}
-      <header>
-        <canvas></canvas>
-      </header>
-
-      {/* Add the AnimatedTextGrid component, which will be centered and cover the entire page */}
-      <AnimatedTextGrid text="UNAIHUB" />
+    <>
+      {/* 
+        Use the Head component to update the title of the page and set the viewport
+        for responsive design
+      */}
+      <Head>
+        <title>Home | UNAIHUB</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
 
       {/* 
-        Wrap the other content in a separate div and set its position to "relative" 
-        and zIndex to 0 to ensure it's placed below the AnimatedTextGrid component.
-        If you want this content to be visible after the animation, you can modify the
-        zIndex and background-color properties of the AnimatedTextGrid component accordingly.
+        Wrap the AnimatedTextGrid component in a div with the styles.animatedTextGrid
+        className to apply the correct styling to the landing page
       */}
-      <div style={{ position: "relative", zIndex: 0 }}>
-        <h1>Hello Next.js 👋</h1>
-        <p>
-          <Link href="/about">About</Link>
-        </p>
+      <div className={styles.animatedTextGrid}>
+        <AnimatedTextGrid text="UNAIHUB" />
       </div>
-    </Layout>
+    </>
   );
 };
 
+// Export the IndexPage component as the default export
 export default IndexPage;

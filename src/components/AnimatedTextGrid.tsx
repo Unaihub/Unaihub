@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import styles from "../styles/AnimatedTextGrid.module.scss";
+import styles from "../../styles/AnimatedTextGrid.module.scss";
 
 // Define the props for the AnimatedTextGrid component
 interface AnimatedTextGridProps {
@@ -17,7 +17,7 @@ const createGridCell = (
   duration: number
 ) => {
   const cell = document.createElement("div");
-  cell.className = "grid-cell";
+  cell.className = styles.gridCell;
   cell.style.left = `${x * 20}px`;
   cell.style.top = `${y * 20}px`;
   cell.style.transitionDuration = `${duration}ms`;
@@ -57,7 +57,7 @@ const AnimatedTextGrid: React.FC<AnimatedTextGridProps> = ({
     // Create a div element for each character
     characters.forEach((char, index) => {
       const charDiv = document.createElement("div");
-      charDiv.className = "character";
+      charDiv.className = styles.character;
       container.appendChild(charDiv);
       characterElements.push(charDiv);
     });
@@ -98,9 +98,9 @@ const AnimatedTextGrid: React.FC<AnimatedTextGridProps> = ({
 
   // Render the component
   return (
-    <div ref={containerRef} className="animated-text-grid">
+    <div ref={containerRef} className={styles.animatedTextGrid}>
       {text.split("").map((char, index) => (
-        <div key={index} className="character"></div>
+        <div key={index} className={styles.character}></div>
       ))}
     </div>
   );
